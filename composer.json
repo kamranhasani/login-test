@@ -1,0 +1,19 @@
+{
+    "name": "kamran/login",
+    "description": "loginuser by kamran kasani",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Kamran\\Login\\":"src/"
+        }
+    
+    },
+    "authors": [
+        {
+            "name": "kamranhasani"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.8"
+    }
+}
