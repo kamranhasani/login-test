@@ -34,7 +34,7 @@ if($PDO){
 		
 }	
 
-else{                                                              //form check
+else{                                                           
 if (empty($name)) {
 	
 	$errorsone = 'نام خود را وارد نمایید.';
@@ -59,6 +59,7 @@ header("location:registeruser.php");
 //-----END REGISRET
 	
 //-----START LOGIN
+
 	    if (isset($_POST['login'])){
 		if (chektoken($_POST['token'])) {  //set token
 		if (!empty($_POST['emaill']) && !empty($_POST['pwdl']) && !empty($_POST['token'])) {
@@ -102,9 +103,7 @@ header("location:index.php");
 
 //-----END LOGIN
 
-
-
-
+//-----START REMEMBER
 if (isset($_POST['remember'])){
 if (chektoken($_POST['token'])) {                             
 if (!empty($_POST['emailsearch']) &&  !empty($_POST['token'])   ){
@@ -151,9 +150,11 @@ else{
 header("location:remember.php");
 }
 
-
-
 }
+
+//-----END REMEMBER
+
+//-----START PASSWORDCHANGE
 
 	if(isset($_GET['do'])){
 	$do=($_GET['do']);
@@ -172,10 +173,8 @@ header("location:remember.php");
 
 
 if (isset($_POST['change'])){
-if (chektoken($_POST['token'])) {  //set token
-	
+if (chektoken($_POST['token'])) {  
 	if (isset ($_SESSION['do'])){
-		
 		$ado=test_input($_SESSION['do']);
 		if (!empty($_POST['pwdchange']) && !empty($_POST['token']) && !empty($ado) ) {
 			$pwdchange=md5(test_input($_POST['pwdchange']));
@@ -208,15 +207,9 @@ if (chektoken($_POST['token'])) {  //set token
 	}
 
 }
-
-
-
 	}
 
 }
-
+//-----START PASSWORDCHANGE
 }
-
-
-
 		?>

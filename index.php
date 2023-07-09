@@ -30,25 +30,24 @@ $_SESSION['token']=$randomtoken;
 					
 				
 				<div class="card-body">
-				<?php
 
+<?php
 
 if (isset($_SESSION['filderror'])){
-						
-	echo $_SESSION['filderror']; 
-								   
-   session_unset();
+
+echo $_SESSION['filderror']; 
+			
+session_unset();
 
 }
 
-					if (isset($_SESSION['errorlogin'])){
-						
-				     	echo $_SESSION['errorlogin']; 
-														
-						session_unset();
+if (isset($_SESSION['errorlogin'])){
 
-					}
+echo $_SESSION['errorlogin']; 
+								
+session_unset();
 
+}
 
 				?>
 				<br>

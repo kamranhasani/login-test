@@ -39,8 +39,7 @@
 							
 							<input type="hidden" class="form-control" id="txt-password"  name="token" id="token" value=""/>
 						</div>
-						
-
+					
 						<div class="form-group">
 							<input type="submit" value="ثبت" class="btn float-right login_btn" name="rempass">
 						</div>

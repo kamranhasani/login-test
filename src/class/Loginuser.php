@@ -94,10 +94,5 @@ public function uppassword($pass,$ado){
 	return $sql;
 }
 
-
-
-
-
-
 }
 ?>

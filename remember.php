@@ -41,14 +41,11 @@ $_SESSION['token']=$randomtoken;
 	   session_unset();
 
    }
-
-
 if (isset($_SESSION['emailsearch'])){
 						
 	echo $_SESSION['emailsearch']; 
 								   
    session_unset();
-
 }
 
 					if (isset($_SESSION['erroremail'])){
