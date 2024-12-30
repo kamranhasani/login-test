@@ -56,14 +56,14 @@ session_unset();
 							<div class="input-group-prepend">
 								<span class="input-group-text input-icon"><i class="fas fa-user"></i></span>
 							</div>
-							<input type="email" class="form-control" id="txt-username" placeholder="ایمیل کاربری" name="emaill" id="emaill">
+							<input type="email" class="form-control"  placeholder="ایمیل کاربری" name="emaill" id="emaill">
 						</div>
 						
 						<div class="input-group form-group">
 							<div class="input-group-prepend">
 								<span class="input-group-text input-icon"><i class="fas fa-key"></i></span>
 							</div>
-							<input type="password" class="form-control" id="txt-password" placeholder="رمز عبور" name="pwdl" id="pwdl">
+							<input type="password" class="form-control"  placeholder="رمز عبور" name="pwdl" id="pwdl">
 						</div>
 
 						<div class="input-group form-group">		
